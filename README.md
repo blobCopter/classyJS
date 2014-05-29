@@ -30,7 +30,26 @@ var leFoo = new Foo(...);
 
 ```
 
-**Stuff**
+**Extend**
+```javascript
+var Bar = My.Class.derive(Foo,
+  // contructor
+  function Bar_ctor(...) { ... },
+  // instance members
+  {
+    ...
+  },
+  // class members
+  {
+    ...
+  }
+);
+
+var leBar = new Bar(...);
+
+```
+
+**Other Stuff**
 ```javascript
 var Foo = My.Class.define(
   ...,
